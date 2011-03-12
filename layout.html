@@ -11,29 +11,58 @@
 		
         <link rel="stylesheet" href="css/page.css" />
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />
-		
+        		
 		<script type="text/javascript" charset="utf-8" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
-		
+		<script type="text/javascript" src="http://logicbox.net/jquery/simplyscroll/jquery.simplyscroll-1.0.4.js"></script>
+        
+        
 	</head>
 	
 	<body>
 		<div id="container">
 			
 			<div id = "header">
-				header
+				
 			</div> <!-- header -->
 			
 			<div id="content">
-				<div class = "box-left" id="about">
-				    <div class="box-nav-big">
-				        <a href="#">ABOUT ME</a>
-			        </div>
-				</div>
 				
 				<div class="box-left" id="logo">
 				    
+				</div>			    
+				<div class = "box-left" id="about">
+				    <div class="slide">
+					    <div class="box-nav-big">
+                            <a href="javascript:void(0)" class="open" style = "color:#f5f5f5!important;">ABOUT ME</a>
+    			        </div>
+				    </div>
+			        <div class="slide">
+    			        <div id="about-box">
+    			            <p class="p-title"><strong>CONTACT ME</strong></p>
+    			            <p  class="p-inner">
+    			                <span class="label">phone:</span> +40741067001
+    			            </p>
+    			            <p class="p-inner">
+    			                <span class="label">email:</span> hello (at) kassayzsuzsa.com
+    			            </p>
+    			            <p class="p-inner">
+    			                <span class="label">address:</span> ...
+    			            </p>
+    			            <hr />
+    			            <div style = "clear:both">
+    			                
+    			            </div>
+    			            <p  style="font-style:italic; color:#ccc; font-size:18px">
+    			                Or  you can send me email here
+    			            </p>
+    			        </div>
+    			        <div class="open">
+    			            <a href="javascript:void(0);" class = "back-link"></a>
+                        </div>
+			        </div>				    
 				</div>
+
 				<div id="logo-middle">
 				    
 				</div>
@@ -73,35 +102,35 @@
 				<div class="box-left" id="program">
 				    <div class="slide">
 					    <div class="box-nav-big">
-                            <a href="javascript:void(0)" class="open">PROGRAM</a>
+                            <a href="javascript:void(0)" class="open"  style = "color:#BE2D64!important">PROGRAM</a>
     			        </div>
     			        
 				    </div>
 			        
 			        <div class="slide">
     			        <div id="program-box">
-    			            <p class="p-title"><strong>MY PROGRAM</strong></p>
+    			            <p class="p-title" style = "color:#BE2D64"><strong>MY PROGRAM</strong></p>
     			            <p  class="p-inner">
     			                <span class="label">wednesday:</span> 16-19
     			            </p>
     			            <p class="p-inner">
     			                <span class="label">friday:</span> 16-19
     			            </p>
-    			            <hr style = "background:#000" />
-    			            <div style = "clear:both"></div>
+
     			            
-    			            <p  style="font-style:_italic; color:#BE2D64; font-size:18px">
+    			            <p  style="font-style:italic; color:#666; font-size:18px">
     			                You can find me at ...
     			            </p>
+
+			                
     			            <hr />
-    			            <div style = "clear:both"></div>
-    			            
-    			            <p  style="font-style:_italic; color:#BE2D64; font-size:18px">
-    			                Or make a reservation by sending Me an email
+    			            <div style = "clear:both"></div>			                
+    			            <p  style="font-style:italic; color:#666; font-size:18px">
+    			                <strong>Or make a reservation by sending Me an email</strong>
     			            </p>    			            
     			        </div>
     			        <div class="open">
-    			            <a href="javascript:void(0);" class = "back-link"></a>
+    			            <a href="javascript:void(0);" class = "back-link-black"></a>
                         </div>
 			        </div>
 				</div>
@@ -111,11 +140,13 @@
 		
 		<div id="footer">
 			
-			footer
+			
 		</div> <!-- footer -->
 		
 		<script type="text/javascript">
 		    $(function() {
+
+
 		        
 		        $('#content').fadeIn(1000);
 		        
@@ -135,8 +166,15 @@
             		//next:   '#bios-cycle .close', 
             		prev:	'#program .open'
             	});
+                $('#about').cycle({
+            		fx: 'scrollLeft,scrollDown',
+            		speed:   300, 
+            		timeout: 0, 
+            		//next:   '#mission-cycle .close', 
+            		prev:	'#about .open'
+            	});
 		        
-		    })
+		    });
 		</script>
 	</body>
 

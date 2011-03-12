@@ -123,7 +123,7 @@ div#content {
 
 
     .box-left, .box-right {
-        border:1px solid red;
+        border:0px solid red;
         margin:15px;
         width:410px;
         height:390px;
@@ -140,17 +140,21 @@ div#content {
     }
     
     #about {
+
+        background:#1A1E1C;
+        -webkit-border-top-right-radius: 50px;
+        -moz-border-radius-topright:50px;
+        -webkit-border-bottom-left-radius:50px;
+        -moz-border-radius-bottomleft:50px;        
+    }
+
+    #logo {
         -webkit-border-top-left-radius: 50px;
         -moz-border-radius-topleft:50px;
         -webkit-border-bottom-right-radius:50px;
         -moz-border-radius-bottomright:50px;
-    }
+        background:#fff;
 
-    #logo {
-        -webkit-border-top-right-radius: 50px;
-        -moz-border-radius-topright:50px;
-        -webkit-border-bottom-left-radius:50px;
-        -moz-border-radius-bottomleft:50px;
     }
 
     #contact {
@@ -210,7 +214,7 @@ div#content {
         
     }
     
-    #contact-box, #program-box {
+    #contact-box, #program-box, #about-box {
         height: 300px;
         padding:10px;
         font-family:'Josefin Sans', arial, serif;
@@ -229,6 +233,10 @@ div#content {
     
     #program .label {
         width:120px;
+    }
+    
+    #about .label {
+        color:#dcdcdc!important;
     }
     
     .p-inner{
@@ -251,8 +259,8 @@ div#content {
     #program hr {
         width:33%;
         height:2px;
-        background: #333;
-        border:1px solid #333;
+        background: #BE2D64;
+        border:1px solid #BE2D64;
         float:left;
         -moz-border-radius:2px;;
     }
@@ -262,9 +270,17 @@ div#content {
         display:inline-block;
         width:40px;
         height:40px;
-        background: url(../img/back.png) no-repeat transparent;
+        background: url('../img/back-white.png') no-repeat transparent;
         margin:10px;
     }
+    
+    .back-link-black {
+        display:inline-block;
+        width:40px;
+        height:40px;
+        background: url('../img/back-black.png') no-repeat transparent;
+        margin:10px;
+    }    
     
 div#footer {
     border:0px solid #ccc;
