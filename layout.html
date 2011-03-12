@@ -4,12 +4,17 @@
 
 	<head>
 		
-		<title></title>
+		<title>Dr. Kassay Zsuzsa</title>
 
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 
-		<link rel="stylesheet" href="page.css" />
-		<script type="text/javascript" charset="utf-8" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		
+        <link rel="stylesheet" href="css/page.css" />
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		<script type="text/javascript" charset="utf-8" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+		
 	</head>
 	
 	<body>
@@ -19,13 +24,87 @@
 				header
 			</div> <!-- header -->
 			
-			
-			<div id = "sidebar">
-			    sidebar
-			</div> <!-- sidebar -->
-			
 			<div id="content">
-				content
+				<div class = "box-left" id="about">
+				    <div class="box-nav-big">
+				        <a href="#">ABOUT ME</a>
+			        </div>
+				</div>
+				
+				<div class="box-left" id="logo">
+				    
+				</div>
+				<div id="logo-middle">
+				    
+				</div>
+				<div class="box-left" id="contact">
+				    <div class="slide">
+					    <div class="box-nav-big">
+                            <a href="javascript:void(0)" class="open" style = "color:#fff!important;">CONTACT</a>
+    			        </div>
+				    </div>
+			        
+			        <div class="slide">
+    			        <div id="contact-box">
+    			            <p class="p-title"><strong>CONTACT ME</strong></p>
+    			            <p  class="p-inner">
+    			                <span class="label">phone:</span> +40741067001
+    			            </p>
+    			            <p class="p-inner">
+    			                <span class="label">email:</span> hello (at) kassayzsuzsa.com
+    			            </p>
+    			            <p class="p-inner">
+    			                <span class="label">address:</span> ...
+    			            </p>
+    			            <hr />
+    			            <div style = "clear:both">
+    			                
+    			            </div>
+    			            <p  style="font-style:italic; color:#ccc; font-size:18px">
+    			                Or  you can send me email here
+    			            </p>
+    			        </div>
+    			        <div class="open">
+    			            <a href="javascript:void(0);" class = "back-link"></a>
+                        </div>
+			        </div>
+				</div>
+				
+				<div class="box-left" id="program">
+				    <div class="slide">
+					    <div class="box-nav-big">
+                            <a href="javascript:void(0)" class="open">PROGRAM</a>
+    			        </div>
+    			        
+				    </div>
+			        
+			        <div class="slide">
+    			        <div id="program-box">
+    			            <p class="p-title"><strong>MY PROGRAM</strong></p>
+    			            <p  class="p-inner">
+    			                <span class="label">wednesday:</span> 16-19
+    			            </p>
+    			            <p class="p-inner">
+    			                <span class="label">friday:</span> 16-19
+    			            </p>
+    			            <hr style = "background:#000" />
+    			            <div style = "clear:both"></div>
+    			            
+    			            <p  style="font-style:_italic; color:#BE2D64; font-size:18px">
+    			                You can find me at ...
+    			            </p>
+    			            <hr />
+    			            <div style = "clear:both"></div>
+    			            
+    			            <p  style="font-style:_italic; color:#BE2D64; font-size:18px">
+    			                Or make a reservation by sending Me an email
+    			            </p>    			            
+    			        </div>
+    			        <div class="open">
+    			            <a href="javascript:void(0);" class = "back-link"></a>
+                        </div>
+			        </div>
+				</div>
 			</div> <!-- content -->
 			
 		</div> <!-- container -->
@@ -35,7 +114,30 @@
 			footer
 		</div> <!-- footer -->
 		
-		
+		<script type="text/javascript">
+		    $(function() {
+		        
+		        $('#content').fadeIn(1000);
+		        
+                $('#contact').cycle({
+                	//	fx: 'scrollLeft,scrollUp',
+                		fx: 'fadeZoom',
+                		speed:   300, 
+                		timeout: 0, 
+                		//next:   '#contact-cycle .close', 
+                		prev:	'#contact .open'
+                });
+                $('#program').cycle({
+            		//fx: 'scrollLeft,scrollRight',
+            		fx: 'curtainY',
+            		speed:   300, 
+            		timeout: 0, 
+            		//next:   '#bios-cycle .close', 
+            		prev:	'#program .open'
+            	});
+		        
+		    })
+		</script>
 	</body>
 
 </html>
