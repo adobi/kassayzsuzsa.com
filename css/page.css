@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************END RESET***********************/
+
+body, html {
+	height: 100%;
+}
+
+body {
+	background:#FEFEFE;
+	color:#444;
+	font:62.5% /1.5 Helvetica, Arial,sans-serif;
+	line-height:1.5;
+	text-align:center;
+}
+
+a {
+	text-decoration: none; padding:3px; color: #1B3A6D;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+em {
+    font-size:11px;
+}
+
+p {
+    padding:5px;
+}
+
+div#container {
+	font-size:1.2em;
+	height:auto !important;
+	margin:0 auto;
+	min-height:700px;
+	text-align:left;
+	width:950px;
+	border:1px solid #ccc;
+	overflow:hidden;
+}
+
+div#header {
+	height:120px;
+	position:relative;
+	width:950px;
+	border:1px solid #ccc;
+	overflow:hidden;
+}
+
+div#sidebar {
+	float:left;
+	padding:0;
+	width:200px;
+	border:1px solid #ccc;
+	margin-right:20px;
+}
+			
+
+div#content {
+	float:left;
+	padding:10px;
+	width:700px;
+	border:1px solid #ccc;	
+}
+
+
+div#footer {
+    border:1px solid #ccc;
+	font-size:11px;
+	margin-top:30px;
+	padding:20px 0;
+	text-align:center;
+	width:100%;
+}
+
+
+
+
+
+
+
