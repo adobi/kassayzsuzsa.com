@@ -384,7 +384,7 @@ div#content {
         font-size:1.2em;
         font-family: 'Josefin Sans', arial, serif;
     }
-    #contact-form .p-title {
+    #contact-form .p-title, #contact-message-sent-notification .p-title, #contact-message-error-notification .p-title {
         color:#BE2D64;
         font-weight:bold;
         font-family: 'Josefin Sans', arial, serif;
@@ -394,6 +394,10 @@ div#content {
     .input-watermark {
         color:#dadada;
         font-style:italic;
+    }
+    
+    .error {
+        border:3px solid red!important;
     }
     
 div#footer {

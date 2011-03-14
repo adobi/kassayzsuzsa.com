@@ -9,7 +9,7 @@
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 
 		
-        <link rel="stylesheet" href="css/page.css" />
+        <link rel="stylesheet" href="css/site.css" />
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="css/colorbox.css" />
         		
@@ -103,7 +103,7 @@
 				<div class="box-left" id="program">
 				    <div class="slide">
 					    <div class="box-nav-big">
-                            <a href="javascript:void(0)" class="open" id="program-link">PROGRAM</a>
+                            <a href="javascript:void(0)" class="open" id="program-link">MY PROGRAM</a>
     			        </div>
     			        
 				    </div>
@@ -155,6 +155,13 @@
     			    </p>
     			</div>
     			
+    			<div id="contact-message-sent-notification">
+    			    <p class = "p-title">Your message has been sent</p>
+    			</div>
+
+    			<div id="contact-message-error-notification">
+    			    <p class = "p-title" style = "color:red">There was an error, please try again later</p>
+    			</div>    			
 			</div>
 		</div> <!-- container -->
 		
@@ -197,7 +204,73 @@
             		//next:   '#mission-cycle .close', 
             		prev:	'#about .open'
             	});
-		        
+            	
+            	$('#contact-form').delegate('#send-button', 'click', function() {
+            	    
+            	    var values = {}, error = false, self = $(this), img = $('<img>', {src: 'css/images/loading.gif', id: 'loader'});
+            	    
+            	    $('#contact-form').find('input[type=text], textarea').each(function(idx, elem) {
+            	        elem = $(elem);
+            	        if (!elem.val().length) {
+            	            error = true;
+            	            elem.addClass('error');
+            	        } else {
+            	            values[elem.attr('name')] = elem.val();
+            	        }
+            	    });
+            	    
+            	    if (!error) {
+            	        
+            	        self.replaceWith(img);
+            	        
+                	    $.post('mailer.php', values, function(response) {
+                	        
+                	        if (response) {
+                	            //$('#cboxClose').trigger('click');
+                	            
+                	            $.colorbox({
+                	                width:"500px", height:"auto", inline:true, href:"#contact-message-sent-notification"}
+            	                );
+            	                
+            	                // clear input and textarea
+            	                $('#contact-form').find('input[type=text], textarea').each(function(idx, elem) {
+                        	        elem = $(elem);
+                        	        
+                        	        elem.val('');
+                        	    });
+
+                	        } else {
+                	            $.colorbox({
+                	                width:"500px", height:"auto", inline:true, href:"#contact-message-error-notification"}
+            	                );                	            
+                	        }
+            	            
+                	        $('#loader').replaceWith(self);                	        
+                	        
+                	    });
+            	    }
+            	    
+            	    return false;
+            	});
+            	
+            	$('#contact-form').find('input[type=text], textarea').bind('focus, blur', function() {
+            	    var self = $(this)
+            	    if (self.val().length && self.hasClass('error'))  {
+            	        self.removeClass('error');
+            	    } else {
+            	        if (!self.val().length) {
+            	            self.addClass('error');
+            	        }
+            	    }
+            	});
+            	
+            	// reset the form on close
+		        $('#cboxClose').bind('click', function() {
+		            
+		            $('#contact-form').find('.error').removeClass('error');
+		            
+		            return true;
+		        }); 
 		    });
 		</script>
 	</body>
