@@ -30,11 +30,11 @@
         
         $mail->IsSMTP(); // telling the class to use SMTP
         
-        try {
+        //try {
             $mail->SMTPAuth   = true;                  // enable SMTP authentication
-            $mail->SMTPSecure = "tls";                 // sets the prefix to the servier
-            $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
-            $mail->Port       = 587;                   // set the SMTP port for the GMAIL server
+            $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+            $mail->Host       = "ssl://smtp.gmail.com";      // sets GMAIL as the SMTP server
+            $mail->Port       = 465;                   // set the SMTP port for the GMAIL server
             $mail->Username   = "zsu.smtp@gmail.com";  // GMAIL username
             $mail->Password   = "ZsuMailer2011";            // GMAIL password
             $mail->SetFrom('zsu.smtp@gmail.com', 'kassayzsuzsa.com');
@@ -48,13 +48,13 @@
         
             echo 1;
 
-        } catch (phpmailerException $e) {
-            echo 0;
+        //} catch (phpmailerException $e) {
+        //    echo 0;
           //echo $e->errorMessage(); //Pretty error messages from PHPMailer
-        } catch (Exception $e) {
+        //} catch (Exception $e) {
           //echo $e->getMessage(); //Boring error messages from anything else!
-            echo 0;
-        }
+        //    echo 0;
+        //}
     } 
 
     die;
