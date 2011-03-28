@@ -1,3 +1,28 @@
+<?php  
+
+    $app_main_dir = rtrim(dirname($_SERVER['SCRIPT_NAME']),'/\\');	
+	define('_APP_MAIN_DIR', $app_main_dir);
+
+    $newUrl = str_replace('/', '\/', _APP_MAIN_DIR);
+	$pattern = '/'.$newUrl.'/';   
+	$_url = preg_replace($pattern, '', $_SERVER['REQUEST_URI'], 1);
+	
+    if ($_url = explode('/', $_url)) {
+        
+		foreach ($_url as $tag)	{
+			if ($tag) {
+				$_app_info['params'][] = $tag;
+			}
+		}
+	}
+	
+	$lang = (isset($_app_info['params'][0]) ? ($_app_info['params'][0]) : 'ro');
+
+	header('Content-Type: text/html; charset=UTF-8');
+
+
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu">
@@ -6,6 +31,9 @@
 		
 		<title>Dr. Kassay Zsuzsa</title>
 
+        <meta name="description" content="Kassay Zsuzsa fogszabályzó szakorvos, Kassay Zsuzsa medic specialist in ortodontie si ortopedie dento-faciala" />
+        <meta name="keywords" content="Kassay Zsuzsa, fogszabályzás nagykároly, ortodontie carei" />
+        <meta name="author" content="Dobi Attila" />
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 
 		
@@ -24,7 +52,11 @@
 		<div id="container">
 			
 			<div id = "header">
-				
+				<p style="text-align:right; margin-right:30px;">
+				    <a href="ro" id = "ro" style = "opacity:0.6"><img src="img/ro.png" alt=""></a>
+				    <a href="hu" id = "hu" style = "opacity:0.6"><img src="img/hu.png" alt=""></a>
+				    <a href="en" id = "en"><img src="img/en.png" alt=""></a>
+				</p>
 			</div> <!-- header -->
 			
 			<div id="content">
@@ -180,6 +212,8 @@
 		        $('#message').watermark('your message here', {className: 'input-watermark'});
                 
 		        $('#content').fadeIn(1000);
+		        
+		        $('#ro, #hu').colorbox({width:"500px", height:"auto", html:'<p style = "font-size:14px; font-style:italic;">coming soon...</p>'});
 		        
                 $('#contact').cycle({
                 	//	fx: 'scrollLeft,scrollUp',
