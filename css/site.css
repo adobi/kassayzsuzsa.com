@@ -84,16 +84,6 @@ p {
     padding:5px;
     font-size:18px;
 }
-
-@font-face {
-    font-family:Modeno;
-    src: url(modeno.ttf);
-}
-
-.hidden {
-    display:none;
-}
-
 div#container {
 	font-size:1.2em;
 	height:auto !important;
@@ -132,8 +122,7 @@ div#content {
 }
 
 #about {
-
-    background:#1A1E1C;
+    background:#1A1E1C; color: #fff;
     -webkit-border-top-right-radius: 50px;
     -moz-border-radius-topright:50px;
     -webkit-border-bottom-left-radius:50px;
@@ -162,14 +151,11 @@ div#content {
     -moz-border-radius-topleft:50px;
     -webkit-border-bottom-right-radius:50px;
     -moz-border-radius-bottomright:50px;
-    background-color:#F9ECF3;
+    background-color:#F9ECF3; color:#BE2D64;
 }
 
 .box-nav-big {
-  font-family: 'Josefin Sans', arial, serif;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  /*font-family: Modeno, arial, serif;*/
   font-size:3.5em;
   font-weight:bold;
   position:relative;
@@ -201,9 +187,8 @@ div#content {
 }
 
 #contact-box, #program-box, #about-box, #logo-box {
-    height: 210px;
+    height: 220px;
     padding:0px;
-    font-family:'Josefin Sans', arial, serif;
     font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:2em;
 }
@@ -231,42 +216,19 @@ div#content {
 }
 
 .p-title {
+  padding:0;
     font-size:1.3em;
     text-transform: uppercase;
 }
 .p-title strong {
-    font-weight: 100;
-}
-
-#about-link {
-    color:#f5f5f5!important;
-}
-
-#about-link:hover {
-    color:#BE2D64!important;
-}
-
-#contact-link {
-    color:#fff!important;
-}
-
-#contact-link:hover {
-    color:#ccc!important;
-}
-
-#program-link {
-    color:#BE2D64!important;
-}
-
-#program-link:hover {
-    color:#1A1E1C!important;
+    font-weight: 300;
 }
     
 .hide {display: none;}
 
 .profile-picture {
-    width:150px;
-    height:150px;
+    width:160px;
+    height:160px;
     border-radius: 50%;
     margin-top:20px;
 }

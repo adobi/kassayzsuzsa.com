@@ -42,7 +42,7 @@
 
 		
     <link rel="stylesheet" href="css/site.css" />
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+    <!--<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />-->
         		
     <script type="text/javascript" charset="utf-8" src = "http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <!--<script type="text/javascript" charset="utf-8" src="js/jquery.cycle.all.js"></script>
@@ -69,8 +69,8 @@
 				<div class = "box-left" id="about">
 	        <div class="slide">
 		        <div id="about-box">
-	            <p class="p-title" style="color:#eaeaea;"><strong>I'm Zsuzsa Kassay</strong></p>      
-              <p  style="color:#fff;">
+	            <p class="p-title"><strong>I'm Zsuzsa Kassay</strong></p>      
+              <p>
                 I'm a dentist/orthidontist living in Nagykároly.
 	            </p>
               <div style="text-align:center">
@@ -92,7 +92,7 @@
 	            </p>
               <div style = "clear:both"></div>                            
 
-              <p class="p-title"><strong>MY PROGRAM</strong></p>
+              <p class="p-title" style="margin-top:20px;"><strong>MY PROGRAM</strong></p>
               <p  class="p-inner">
                   <span class="label">wednesday:</span> 15-20
               </p>
@@ -106,7 +106,7 @@
 				<div class="box-left" id="program">
 	        <div class="slide">
             <div id="program-box">
-              <p class="p-title"><strong>FIND ME HERE</strong></p>
+              <p class="p-title"><strong>I work here</strong></p>
               <div id="google-maps"></div>
             </div>
 	        </div>
