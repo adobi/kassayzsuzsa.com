@@ -40,16 +40,13 @@
     <meta name="author" content="Dobi Attila" />
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 
-		
     <link rel="stylesheet" href="css/site.css" />
-    <!--<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />-->
-        		
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,500,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <script type="text/javascript" charset="utf-8" src = "http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <!--<script type="text/javascript" charset="utf-8" src="js/jquery.cycle.all.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jquery.colorbox-min.js"></script>
     <script type="text/javascript" charset="utf-8" src = "js/jquery.watermark.min.js"></script>-->
-    <script type="text/javascript" src="//use.typekit.net/fpv3vty.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script type="text/javascript" charset="utf-8" src = "js/zsu.js"></script>
 	</head>
@@ -62,7 +59,7 @@
 				<div class="box-left" id="logo">
 			    <div class="slide">
 				    <div class="box-nav-big">
-             <a href="">HELLO THERE!</a>
+             <a href="">HELLO THERE <span class="smiley">:)</span></a>
 		        </div>
 			    </div>
 		    </div>			    
@@ -79,11 +76,10 @@
 		        </div>
 	        </div>				    
 				</div>
-				</div>
 				<div class="box-left" id="contact">
           <div class="slide">
 		        <div id="contact-box">
-	            <p class="p-title"><strong>CONTACT ME</strong></p>
+	            <p class="p-title" style="text-align:left;"><strong>CONTACT ME</strong></p>
 	            <p  class="p-inner">
 	                <span class="label">phone:</span> +40741067001
 	            </p>
@@ -92,7 +88,7 @@
 	            </p>
               <div style = "clear:both"></div>                            
 
-              <p class="p-title" style="margin-top:20px;"><strong>MY PROGRAM</strong></p>
+              <p class="p-title" style="margin-top:20px; text-align:left"><strong>MY PROGRAM</strong></p>
               <p  class="p-inner">
                   <span class="label">wednesday:</span> 15-20
               </p>
@@ -106,7 +102,7 @@
 				<div class="box-left" id="program">
 	        <div class="slide">
             <div id="program-box">
-              <p class="p-title"><strong>I work here</strong></p>
+              <p class="p-title" style="text-align:left;"><strong>I work here</strong></p>
               <div id="google-maps"></div>
             </div>
 	        </div>
