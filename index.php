@@ -67,8 +67,8 @@
 	        <div class="slide">
 		        <div id="about-box">
 	            <p class="p-title"><strong>I'm Zsuzsa Kassay</strong></p>      
-              <p>
-                I'm a dentist/orthidontist living in Nagykároly.
+              <p style="text-align:center">
+                I'm a dentist/orthodontist in Nagykároly.
 	            </p>
               <div style="text-align:center">
                 <img class="profile-picture" src="img/profile.jpg">
@@ -90,10 +90,10 @@
 
               <p class="p-title" style="margin-top:20px; text-align:left"><strong>MY PROGRAM</strong></p>
               <p  class="p-inner">
-                  <span class="label">wednesday:</span> 15-20
+                  <span class="label">wednesday:</span> 15:00-20:00
               </p>
               <p class="p-inner">
-                  <span class="label">friday:</span> 15-20
+                  <span class="label">friday:</span> 15:00-20:00
               </p>
 		        </div>
           </div>
