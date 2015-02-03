@@ -39,7 +39,7 @@
         #cboxNext.hover{background-position:-50px -25px;}
         #cboxLoadingOverlay{background:url(images/loading_background.png) center center no-repeat;}
         #cboxLoadingGraphic{background:url(images/loading.gif) center center no-repeat;}
-        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/close.png); width:38px; height:36px; text-indent:-9999px;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/close.png); width:38px; height:36px; text-indent:-9999px; border:0;}
         #cboxClose.hover{background:url(images/close_over.png);}
 
 /*
