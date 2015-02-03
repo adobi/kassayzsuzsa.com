@@ -43,9 +43,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,light,lightitalic,regular,600,600italic,bold,bolditalic' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="css/colorbox.css" />
         		
-		<script type="text/javascript" charset="utf-8" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
-		<script type="text/javascript" charset="utf-8" src="https://github.com/jackmoore/colorbox/raw/master/colorbox/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" charset="utf-8" src = "http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.cycle.all.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.colorbox-min.js"></script>
         <script type="text/javascript" charset="utf-8" src = "js/jquery.watermark.min.js"></script>
         <script type="text/javascript" charset="utf-8" src = "js/zsu.js"></script>
         
@@ -56,8 +56,8 @@
 			
 			<div id = "header">
 				<p style="text-align:right; margin-right:30px;">
-				    <a href="ro" id = "ro" style = "opacity:0.6"><img src="img/ro.png" alt=""></a>
-				    <a href="hu" id = "hu" style = "opacity:0.6"><img src="img/hu.png" alt=""></a>
+				    <a href="ro" id = "ro" style = "opacity:0.4"><img src="img/ro.png" alt=""></a>
+				    <a href="hu" id = "hu" style = "opacity:0.4"><img src="img/hu.png" alt=""></a>
 				    <a href="en" id = "en"><img src="img/en.png" alt=""></a>
 				</p>
 			</div> <!-- header -->
