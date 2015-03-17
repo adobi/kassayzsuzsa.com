@@ -125,34 +125,34 @@ p {
 
 #about {
     background:#1A1E1C; color: #fff;
-    -webkit-border-top-right-radius: 50px;
-    -moz-border-radius-topright:50px;
-    -webkit-border-bottom-left-radius:50px;
-    -moz-border-radius-bottomleft:50px;        
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topright:30px;
+    -webkit-border-bottom-left-radius:30px;
+    -moz-border-radius-bottomleft:30px;        
 }
 
 #logo {
-    -webkit-border-top-left-radius: 50px;
-    -moz-border-radius-topleft:50px;
-    -webkit-border-bottom-right-radius:50px;
-    -moz-border-radius-bottomright:50px;
+    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft:30px;
+    -webkit-border-bottom-right-radius:30px;
+    -moz-border-radius-bottomright:30px;
     background:#fff;
 
 }
 
 #contact {
-    -webkit-border-top-right-radius: 50px;
-    -moz-border-radius-topright:50px;
-    -webkit-border-bottom-left-radius:50px;
-    -moz-border-radius-bottomleft:50px;
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topright:30px;
+    -webkit-border-bottom-left-radius:30px;
+    -moz-border-radius-bottomleft:30px;
     background:#BE2D64; color:#fff;
 }
 
 #program {
-    -webkit-border-top-left-radius: 50px;
-    -moz-border-radius-topleft:50px;
-    -webkit-border-bottom-right-radius:50px;
-    -moz-border-radius-bottomright:50px;
+    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft:30px;
+    -webkit-border-bottom-right-radius:30px;
+    -moz-border-radius-bottomright:30px;
     background-color:#F9ECF3; color:#BE2D64;
 }
 
@@ -244,7 +244,7 @@ p {
 }
 
 #google-maps {
-    height: 100%;
+    height: 95%;
     padding: 0px;
     width:100%;
 }
